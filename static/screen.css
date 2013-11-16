@@ -1,0 +1,202 @@
+html {
+   background-color: #ffffff;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 100%;
+   margin: 50px 0 0;
+   overflow-y: scroll;
+   padding: 0;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body, button, input, select, textarea { font-family: 'Montserrat', Verdana, sans-serif; color: #222; }
+h1 { font-size: 3.8em; color: #293c11; font-family:'Montserrat'; margin: 3px 0; padding:0; }
+h1 .small { font-size: 0.4em; }
+h1 a { text-decoration: none }
+h2 { font-size: 1.5em; color: #293c11; margin: 0;margin-left: 10px; }
+h3 { color: #293c11; }
+
+
+a :hover {
+   cursor: pointer;
+   text-decoration: underline;
+}
+img {
+   border: none;
+}
+#content {
+   padding-left: 1em;
+}
+
+
+
+body {
+  background:#FFF;
+  font:14px/20px helvetica, arial;
+  text-align:center;
+  margin:40px;
+  color:#666;
+}
+
+a {
+  color:#F60;
+}
+
+    .demo {
+      text-align:left;
+      width:600px;
+      margin:0 auto;
+      padding:20px;
+      background:#FFFFEE;
+      -moz-box-shadow: #a6a6a6 0px 0px 4px;
+      box-shadow: #a6a6a6 0px 0px 4px;
+      -webkit-box-shadow: #a6a6a6 0px 0px 4px;
+    }
+    input {
+      font-family: monospace;
+      font-size:16px;
+    }
+    .swatch {
+      padding:10px;
+    }
+    .method {
+      margin-bottom:20px;
+    }
+    .code p{margin:0; padding:0; display:none;}
+
+    .source {
+      font-size:10px;
+      line-height:14px;
+    }
+
+    .example, .code {
+      margin:10px 0;
+      padding:10px 0;
+      border-top:2px #CCC solid;
+    }
+    h2 {
+      font-size:16px;
+    }
+    h1 {
+      color:#000;
+    }
+    .example h2, .example p {
+      margin:0 0 10px;
+    }
+     .example p {
+       width:300px;
+     }
+    .method b {
+      color:#2e5478;
+    }
+
+    .method div {
+      width:400px;
+    }
+
+    code {
+      display:none;
+      background:#FFF;
+      padding:10px;
+    }
+
+    .returns {
+      color:#237210;
+    }
+
+    .show_source {
+      margin:20px 0 0;
+      color:#999;
+      text-decoration:underline;
+      cursor:pointer;
+    }
+
+.colorwheel{
+  float:left; margin-right:20px; width:300px; text-align:left;
+}
+
+table th {
+  width: 200px;
+  text-align: right;
+  padding-right:10px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+}
+
+#code-output {
+  border: solid 5px #333;
+  margin:15px;
+  border-top-width: 40px;
+}
+
+#color { width: 200px; height: 2em;}
+
+.invisible { visibility: hidden; }
+
+.description {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  font-style: italic;
+}
+
+
+pre { background: #000; color: #fff; padding: 5px;}
+
+
+#filter-output div, #combine-output span {
+  width: 40px;
+  height: 40px;
+  display:inline-block;
+  margin: 0px; }
+
+
+
+    h1 {
+      font-size: 24px;
+      margin-left: 350px;
+    }
+
+    p {
+      margin-left: 300px;
+      font-size: 12px;
+      width: 400px;
+    }
+
+    .line {
+      fill: none;
+      stroke: #000000;
+    }
+
+    .point {
+      fill: blue;
+      stroke: #000;
+    }
+
+    .reference-point {
+      stroke: #000;
+      fill: #FFF;
+      fill-opacity: 0;
+    }
+
+    .tooltip {
+      visibility: hidden;
+      color: #000;
+      stroke: #000;
+      fill: #FFF;
+      stroke-width: 4px;
+      fill-opacity: .9;
+    }
+
+    .tooltip-text {
+      stroke: none;
+      fill: #000;
+      text-anchor: start;
+      font-family: sans-serif;
+      font-size: 14px;
+    }
+
+    .tooltip-title {
+      font-weight: bold;
+      font-size: 16px;
+    }

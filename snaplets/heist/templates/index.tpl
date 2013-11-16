@@ -1,85 +1,66 @@
 <apply template="base">
+  <script src="/js/d3.v3.min.js"></script>
+<style>
 
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: auto;
+  position: relative;
+  width: 960px;
+}
+
+form {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.node {
+  border: solid 1px white;
+  font: 10px sans-serif;
+  line-height: 12px;
+  overflow: hidden;
+  position: absolute;
+  text-indent: 2px;
+}
+
+</style>
 
 <div class="container">
 
 <!--
 The following color types are supported: RGB; HSL; HSV; Hex; Name (from http://www.w3.org/TR/css3-color/#svg-color)
 -->
-<h1 class="page-header">Title</h1>
+<h1 class="page-header">App</h1>
 
 <div class="row">
 
   <div class="col-lg-7 col-md-7">
 
-  <div id='demo'>
-    <div id='inputter'>
-      <div id="show_off"></div>
-      <!-- <div id="holder"></div> -->
-    </div>
+  <img src="http://distilleryimage10.ak.instagram.com/a00debf236c611e3a1e322000a9e0853_8.jpg" class="img-responsive">
 
-    <!-- Chart -->
+  </div>
 
-  </div><!-- /end #demo -->
+  <div class="col-lg-5 col-md-5">
+    <h4 style="text-align:left">Users' Interaction</h4>
+    <ol id="flow">
+      <li>Restaurant Foods</li>
+      <li>Browse food items</li>
+      <li>Check Nutrition Facts</li>
+      <li>Config the chart</li>
+    </ol>
+    <a href="/instagram/shakeshack" class="btn btn-small btn-info">Ready? Let's go</a>
+    <div id="exampleTree"></div>
+    <form>
+      <label><input type="radio" name="mode" value="size" checked> Size</label>
+      <label><input type="radio" name="mode" value="count"> Count</label>
+    </form>
 
 
+  </div>
 
+  </div>
 </div>
 
-<div class="col-lg-5 col-md-5">
-    <pre id='code-output'></pre>
-
-    <div id='filter-output'>
-       <table>
-           <tr>
-               <th>Lighten</th>
-               <td><div class='lighten'></div></td>
-           </tr>
-           <tr>
-               <th>Darken</th>
-               <td><div class='darken'></div></td>
-           </tr>
-           <tr>
-               <th>Saturate</th>
-               <td><div class='saturate'></div></td>
-           </tr>
-           <tr>
-               <th>Desaturate</th>
-               <td><div class='desaturate'></div></td>
-           </tr>
-           <tr>
-               <th>Greyscale</th>
-               <td><div class='greyscale'></div></td>
-           </tr>
-       </table>
-    </div>
-
-    <div id='combine-output'>
-       <table>
-           <tr>
-               <th>Triad</th> <td><div class='triad'></div></td>
-           </tr>
-           <tr>
-               <th>Tetrad</th> <td><div class='tetrad'></div></td>
-           </tr>
-           <tr>
-               <th>Monochromatic</th> <td><div class='mono'></div></td>
-           </tr>
-           <tr>
-               <th>Analogous</th> <td><div class='analogous'></div></td>
-           </tr>
-           <tr>
-               <th>Split Complements</th> <td><div class='sc'></div></td>
-           </tr>
-       </table>
-    </div>
-
-
-
-
-    </div>
-
-    </div>
-</div>
-
+<!-- <script src="/js/home_d3.js" type="text/javascript"></script> -->
 </apply>

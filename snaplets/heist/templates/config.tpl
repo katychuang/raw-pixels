@@ -2,6 +2,10 @@
     <head>
     <script src="/js/raphael-2.1.0-min.js" type="text/javascript"></script>
     <script src="/js/colorwheel.js" type="text/javascript"></script>
+    <script src="/js/chroma.js" type="text/javascript"></script>
+    <script src="/js/chroma.palette-gen.js" type="text/javascript"></script>
+
+
     <script src="http://code.highcharts.com/highcharts.js"></script>
     <script src="http://code.highcharts.com/modules/exporting.js"></script>
   </head>
@@ -87,6 +91,5 @@ The following color types are supported: RGB; HSL; HSV; Hex; Name (from http://w
 
     </div>
 </div>
-<script src="/js/custom.js" type="text/javascript"></script>
-<script src="/js/config_highcharts_demo.js" type="text/javascript"></script>
+<script src="/js/config.js" type="text/javascript"></script>
 </apply>

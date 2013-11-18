@@ -1,4 +1,11 @@
 *.cfg
 .DS_Store
-dist/
 .ghci
+
+dist
+cabal-dev
+*.o
+*.hi
+*.chi
+*.chs.h
+.virthualenv

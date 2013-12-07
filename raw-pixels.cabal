@@ -1,10 +1,10 @@
-Name:                code4health2
+Name:                raw-pixels
 Version:             0.1
-Synopsis:            Project Synopsis Here
-Description:         Project Description Here
+Synopsis:            Visualize your nutrition intake
+Description:         Visualize your nutrition intake
 License:             AllRightsReserved
-Author:              Author
-Maintainer:          maintainer@example.com
+Author:              Kat Chuang
+Maintainer:          katychuang@gmail.com
 Stability:           Experimental
 Category:            Web
 Build-type:          Simple
@@ -18,21 +18,46 @@ Flag old-base
   default: False
   manual: False
 
-Executable code4health2
+Executable raw-pixels
   hs-source-dirs: src
-  main-is: Main.hs
+  main-is: Web/Main.hs
+  other-modules: App.Combo
 
   Build-depends:
+    aeson                     >= 0.6.2.0 && < 0.7,
+    attoparsec                >= 0.10    && < 0.11,
     bytestring                >= 0.9.1   && < 0.11,
+    configurator              >= 0.2     && < 0.3,
+    containers                >= 0.5     && < 0.6,
+    digestive-functors        >= 0.6     && < 0.7,
+    digestive-functors-heist  >= 0.8     && < 0.9,
+    digestive-functors-snap   >= 0.6     && < 0.7,
+    errors                    >= 1.4     && < 1.5,
+    groundhog                 >= 0.4     && < 0.5,
+    groundhog-postgresql      >= 0.4     && < 0.5,
+    groundhog-th              >= 0.4     && < 0.5,
+    hashable                  >= 1.1     && < 1.3,
     heist                     >= 0.13    && < 0.14,
     MonadCatchIO-transformers >= 0.2.1   && < 0.4,
+    monad-control             >= 0.3     && < 0.4,
+    monad-logger              >= 0.3     && < 0.4,
     mtl                       >= 2       && < 3,
+    postgresql-simple         >= 0.3.4   && < 0.4,
+    resource-pool             >= 0.2     && < 0.3,
+    restful-snap              >= 0.3     && < 0.4,
+    safe                      >= 0.3     && < 0.4,
     snap                      >= 0.13    && < 0.14,
     snap-core                 >= 0.9     && < 0.11,
+    snap-extras               >= 0.7     && < 0.8,
     snap-server               >= 0.9     && < 0.11,
     snap-loader-static        >= 0.9     && < 0.10,
+    snaplet-postgresql-simple >= 0.4.1   && < 0.5,
     text                      >= 0.11    && < 0.12,
     time                      >= 1.1     && < 1.5,
+    transformers              >= 0.3     && < 0.4,
+    transformers-base,
+    unordered-containers      >= 0.2     && < 0.3,
+    vector                    >= 0.10    && < 0.11,
     xmlhtml                   >= 0.1
 
   if flag(old-base)
@@ -55,9 +80,12 @@ Executable code4health2
     -- warnings allows quicker workflow.
     ghc-options: -threaded -w
   else
+    build-depends:
+      snap-loader-static        >= 0.9     && < 0.10
     if impl(ghc >= 6.12.0)
       ghc-options: -threaded -Wall -fwarn-tabs -funbox-strict-fields -O2
                    -fno-warn-orphans -fno-warn-unused-do-bind
     else
       ghc-options: -threaded -Wall -fwarn-tabs -funbox-strict-fields -O2
                    -fno-warn-orphans
+

@@ -1,5 +1,5 @@
 
-<apply template="base">
+<apply template="_base">
   <head>
     <script src="http://code.highcharts.com/highcharts.js"></script>
     <script src="http://code.highcharts.com/modules/exporting.js"></script>
@@ -7,7 +7,7 @@
 
 
 <div class="container">
-  <h1 class="page-header">Salad</h1>
+  <h1 class="page-header">Cheeseburger</h1>
   <div class="col-lg-3 col-md-3">
     <img src="http://s.cdpn.io/3/NutritionFacts.gif" class="img-responsive" />
   </div>

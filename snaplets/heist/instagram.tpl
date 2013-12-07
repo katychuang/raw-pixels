@@ -1,4 +1,4 @@
-<apply template="base">
+<apply template="_base">
 
 
 <div class="container">
@@ -15,7 +15,6 @@ The following color types are supported: RGB; HSL; HSV; Hex; Name (from http://w
     </bind>
   </div>
 
-
   <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
     <!-- Loop through instagram feed -->
     <div id="instafeed"></div>
@@ -27,12 +26,25 @@ The following color types are supported: RGB; HSL; HSV; Hex; Name (from http://w
 <script type="text/javascript" src="/js/instafeed.min.js"></script>
 <script>
     var feed = new Instafeed({
-        get: 'tagged',
-        tagName: 'dinner',
+        get: 'location',
+        locationId: 13765, //ShakeShack
         clientId: 'd60340d55d864859a9d3a34f50a6d816',
         limit: 50,
-        sortBy: 'most-commented',
+        tagsBurger: true,
+        filter: function (image) {
+          console.log(image.tags);
+
+          if (image.tags != 'burger') {
+            return false;
+          }
+          // otherwise keep them
+          return true;
+        }
+        // get: 'tagged',
+        // tagName: 'whatiate',
+        // clientId: 'd60340d55d864859a9d3a34f50a6d816'
     });
+
     feed.run();
 
 </script>

@@ -1,4 +1,4 @@
-<apply template="base">
+<apply template="_application">
   <script src="/js/d3.v3.min.js"></script>
 <style>
 
@@ -25,7 +25,16 @@ form {
 }
 
 </style>
+<bind tag="contentSecondary">
+    <p>
+      This is template application demonstrating real-world use of the Snap
+      Framework.
+    </p>
+  </bind>
 
+  <bind tag="pageHeader">
+    <h1 class="page-header">App</h1>
+  </bind>
 <div class="container">
 
 <!--

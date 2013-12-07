@@ -2,15 +2,20 @@
 raw-pixels
 ==========
 
-Visualizing nutrition facts, a project started at #code4health. This is built with the Haskell [SnapFramework](http://snapframework.com).
+Visualizing nutrition facts, a project started at #code4health. This is built with the Haskell [SnapFramework](http://snapframework.com). 
 
 ![Image](static/screenshot-NutritionFactsChart.png)
+
+Charts are made with javascript code that renders SVG files.
 
 #Installation
 
 Install GHC from [haskell.org/platform](http://haskell.org/platform). It should be the latest. At the time of this writing the latest version is GHC 7.6.3. It comes with cabal, which is a package manager that helps you install packages from [hackage](http://hackage.haskell.org).
 
 The .cabal file lists dependencies.
+
+You also need to install postgres.
+
 
 
 #Usage
@@ -21,10 +26,13 @@ The .cabal file lists dependencies.
 
 ```sh
 $ cabal build
+$ createuser postgres
+$ createdb testdb
 $ dist/build/codeforhealth/codeforhealth
 ```
 
-**Developer Note:** if you will be editing files, use the fswatch library. The command to watch for changes isi shown below. Template places are saved in snaplets/heist/templates directory and media files saved in static.
+
+**Developer Note:** if you will be editing files, use the fswatch library to automatically reload your app. The command to watch for changes is shown below. Template places are saved in snaplets/heist/templates directory and media files saved in static.
 
 ```sh
 $ fswatch snaplets/heist/templates:static "curl http://localhost:8000/heistReload"
@@ -38,3 +46,9 @@ There are some javascript charting libraries available for visualizing nutrient 
 
 * [Nutrient Contents](http://exposedata.com/parallel/)
 * [Nutrient Explorer](http://bl.ocks.org/syntagmatic/raw/5023284/) 
+
+General charting libraries
+
+* [HighCharts]()
+* [D3]()
+* [Raphael]()

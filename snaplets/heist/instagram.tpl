@@ -1,4 +1,4 @@
-<apply template="_base">
+<apply template="_application">
 
 
 <div class="container">
@@ -11,7 +11,7 @@ The following color types are supported: RGB; HSL; HSV; Hex; Name (from http://w
 
   <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
     <bind tag="contentSecondary">
-      <apply template="instagram/_nav_side"/>
+      <apply template="menu/_sidebar"/>
     </bind>
   </div>
 

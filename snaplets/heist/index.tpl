@@ -33,14 +33,13 @@ form {
   </bind>
 
   <bind tag="pageHeader">
-    <h1 class="page-header">App</h1>
+    <h1 class="page-header">Raw Pixels</h1>
   </bind>
 <div class="container">
 
 <!--
 The following color types are supported: RGB; HSL; HSV; Hex; Name (from http://www.w3.org/TR/css3-color/#svg-color)
 -->
-<h1 class="page-header">App</h1>
 
 <div class="row">
 

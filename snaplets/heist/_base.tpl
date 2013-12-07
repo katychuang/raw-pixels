@@ -11,11 +11,11 @@
     <staticscripts/>
 
     <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-    <script src="/js/jquery.min.js" type="text/javascript"></script>
-    <script type='text/javascript' src='/js/bootstrap.min.js'></script>
-    <script type='text/javascript' src='/js/tinycolor.js'></script>
-    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css"/>
-    <link rel="stylesheet" type="text/css" href="/css/screen.css"/>
+    <script src="/static/js/jquery.min.js" type="text/javascript"></script>
+    <script type='text/javascript' src='/static/js/bootstrap.min.js'></script>
+    <script type='text/javascript' src='/static/js/tinycolor.js'></script>
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/css/screen.css"/>
 
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media

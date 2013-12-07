@@ -39,7 +39,8 @@ publicRoutes =
     , ("heistReload",      failIfNotLocal $ with heist heistReloader)
     , ("browse",           render "instagram")
     , ("nutrition",        render "nutrition")
-    , ("hello",            render "hello")
+    , ("lifeline",         render "lifeline")
+    , ("config",           render "config")
     ]
 
 

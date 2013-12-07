@@ -13,7 +13,7 @@ body {
   background:#FFF;
   font:14px/20px helvetica, arial;
   text-align:center;
-  margin:40px;
+  margin: 0;
   color:#666;
 }
 
@@ -28,6 +28,11 @@ h3 { color: #293c11; }
 a :hover {
    cursor: pointer;
    text-decoration: underline;
+}
+
+.container{
+  margin: 0;
+  padding: 0;
 }
 
 img {

@@ -44,7 +44,7 @@ titleSplice :: Splice AppHandler
 titleSplice = return $ yieldRuntimeText $ do
     lift $ liftM f $ gets _titleFragment
   where
-    site = "Snap Project Template"
+    site = "Raw Pixels by @katychuang"
     f Nothing = site
     f (Just t) = T.concat [t, " - ", site]
 

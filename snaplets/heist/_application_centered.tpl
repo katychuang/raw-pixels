@@ -33,7 +33,7 @@
           <div id="footer" class="row">
             <div class="col-md-12">
               <footer>
-                <p>&copy; Public Domain</p>
+                <p>&copy; Kat Chuang</p>
               </footer>
             </div>
           </div>
